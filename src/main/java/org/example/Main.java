@@ -2,7 +2,6 @@ package org.example;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.concurrent.Flow;
 
 public class Main {
 
@@ -28,8 +27,16 @@ public class Main {
         frame1.setVisible(true);
     }
 
+    /**
+     * This method creates a JPanel with BorderLayout
+     * and adds labels to different positions in the layout.
+     *
+     * @return JPanel with labels added to different positions
+     */
     public static JPanel getPanel() {
-        JPanel panel1 = new JPanel(new BorderLayout()); // Main panel with BorderLayout
+
+        // Main panel with BorderLayout
+        JPanel panel1 = new JPanel(new BorderLayout());
 
         // Add other labels for demonstration
         JLabel label1 = new JLabel("JLabel1", SwingConstants.CENTER);
